@@ -10,7 +10,7 @@ module.exports = function (sails) {
     return {
         defaults: {
             __configKey__: {
-                apiUrl: '',
+                apiUrl: 'https://wyszukiwarkaregon.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc',
                 key: '',
                 actions: {
                     login: 'http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj',
