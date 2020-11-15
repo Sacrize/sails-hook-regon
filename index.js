@@ -68,10 +68,10 @@ module.exports = function (sails) {
                             return reject(err);
                         }
                         let sessionId = JSON.stringify(result).match(/"ZalogujResult":\["(\S+)"\]/);
-                        if (sessionId[1]) {
+                        if (sessionId && sessionId[1]) {
                             resolve(sessionId[1]);
                         } else {
-                            reject(new Error('Not found session id'));
+                            reject(new Error('Unable to log in'));
                         }
                     });
                 })
